@@ -70,3 +70,28 @@ th{background:var(--green);color:#fff;font-size:.78rem;text-transform:uppercase;
 
 /* Ajuste de navegación completa */
 @media(min-width:801px){.site-header{padding-left:5vw;padding-right:5vw}.nav{gap:.55rem;max-width:calc(100% - 78px);scrollbar-width:none}.nav::-webkit-scrollbar{display:none}.nav a{font-size:.7rem}}
+
+
+/* Resultados del diagnóstico y apartados 12 al 14 */
+.result-note{max-width:920px;color:var(--muted)}
+.result-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0}
+.result-summary article{background:var(--green);color:#fff;padding:1.4rem;display:flex;align-items:baseline;gap:.8rem}
+.result-summary strong{font:600 2.5rem 'Playfair Display',serif}.result-summary span{color:#d6e8de}
+.chart-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+.chart-card{background:#fff;border:1px solid var(--line);padding:1.5rem}.chart-card h3{margin-bottom:.2rem}
+.chart-base{color:var(--muted);font-size:.82rem;margin:.2rem 0 1.2rem}
+.bar-row{display:grid;grid-template-columns:minmax(130px,1fr) 2fr 48px;gap:.7rem;align-items:center;margin:.8rem 0;font-size:.86rem}
+.bar-track{height:11px;background:#e2ebe6;overflow:hidden;border-radius:20px}.bar-track i{display:block;height:100%;background:linear-gradient(90deg,var(--green),#70a98d);border-radius:20px}
+.bar-row b{text-align:right;color:var(--green)}.result-table{margin-top:1rem}
+.tool-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2.5rem}
+.tool-grid article{background:#fff;border:1px solid var(--line);padding:1.6rem}.tool-grid>article>span{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--mint);color:var(--green);font-weight:700;font-size:.78rem}.tool-grid h3{margin:.9rem 0 .4rem}.tool-grid p{color:var(--muted);margin:0}
+.applied-resources{margin-top:1rem}
+.experience-list{display:grid;gap:.8rem;margin-top:2.5rem}.experience-list article{display:grid;grid-template-columns:58px 1fr;gap:1rem;background:#fff;border:1px solid var(--line);padding:1.5rem}.experience-list>article>span{color:#c1793d;font-size:1.2rem;font-weight:700}.experience-list h3{margin-bottom:.35rem}.experience-list p{color:var(--muted);margin:0}
+.learning-panel{background:#fff;border:1px solid var(--line);padding:2rem;max-width:1000px;margin:2rem auto 0}
+.closing-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:2.5rem}.closing-grid article{background:#fff;border:1px solid var(--line);padding:1.7rem}.closing-grid>article>span{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--green);color:#fff;font-weight:700}.closing-grid h3{margin:.8rem 0}.closing-grid p,.closing-grid li{color:var(--muted)}
+.projection-panel{margin-top:1rem;padding:2rem;background:var(--green);color:#fff;display:grid;grid-template-columns:.8fr 1.5fr;gap:1.5rem}.projection-panel .eyebrow,.projection-panel .signature{color:#cfe7d4}.projection-panel p{margin:0}
+.annex-list{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem;margin-top:2.5rem}.annex-list article{display:grid;grid-template-columns:45px 1fr;gap:.8rem;background:#fff;border:1px solid var(--line);padding:1.3rem}.annex-list b{color:#c1793d}.annex-list h3{margin:0 0 .25rem}.annex-list p{margin:0;color:var(--muted)}
+.media-links{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.media-links a{background:var(--ink);color:#fff;text-decoration:none;padding:1.6rem;min-height:170px;display:flex;flex-direction:column;transition:transform .2s,background .2s}.media-links a:hover{transform:translateY(-4px);background:var(--green)}.media-links span{color:#91c7ac;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase}.media-links strong{font-size:1.05rem;margin:.5rem 0 auto}.media-links small{color:#c9d4cf}
+.annex-actions{display:flex;flex-wrap:wrap;gap:.8rem}.button-secondary{background:#fff;color:var(--green);border:1px solid var(--green)}
+@media(max-width:900px){.tool-grid{grid-template-columns:1fr 1fr}.media-links{grid-template-columns:1fr}.projection-panel{grid-template-columns:1fr}}
+@media(max-width:700px){.result-summary,.chart-grid,.closing-grid,.annex-list{grid-template-columns:1fr}.tool-grid{grid-template-columns:1fr}.bar-row{grid-template-columns:1fr 48px}.bar-track{grid-column:1/3}.bar-row b{grid-column:2;grid-row:1}.experience-list article{grid-template-columns:1fr}.projection-panel{padding:1.5rem}}
