@@ -67,3 +67,6 @@ th{background:var(--green);color:#fff;font-size:.78rem;text-transform:uppercase;
 @media(max-width:1000px){.method-grid{grid-template-columns:1fr 1fr}.proposal-details{grid-template-columns:1fr}.action-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:800px){.lesson-hero,.proposal-hero,.self-review{grid-template-columns:1fr}.evidence-catalog{grid-template-columns:1fr}.evidence-catalog>div{border-right:0;border-bottom:1px solid var(--line)}.evidence-catalog>div:last-child{border-bottom:0}.journal-body{grid-template-columns:1fr}.proposal-link{min-height:190px}}
 @media(max-width:520px){.method-grid,.action-grid{grid-template-columns:1fr}.journal-list summary span{display:block;margin-bottom:.3rem}.profile-photo{height:360px}}
+
+/* Ajuste de navegación completa */
+@media(min-width:801px){.site-header{padding-left:5vw;padding-right:5vw}.nav{gap:.55rem;max-width:calc(100% - 78px);scrollbar-width:none}.nav::-webkit-scrollbar{display:none}.nav a{font-size:.7rem}}
